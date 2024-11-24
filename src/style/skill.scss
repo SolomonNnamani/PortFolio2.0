@@ -1,0 +1,268 @@
+	.skillContainer{
+		position:relative;
+		padding:0px 100px;
+		
+
+	}
+
+
+.flexSkill{
+	display: flex;
+    align-items: center;
+    width: 200px;
+    writing-mode: vertical-rl;
+	transform: scale(-1,-1);
+	height:180px;
+	position:absolute;
+	top:-8%;
+	left:-15%;
+	z-index:2;
+
+ 
+	&_span{
+		
+	
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+    height:100%;
+
+	}
+	&_para{
+		
+		background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height:230px;
+    font-weight: bold;
+
+
+
+	}
+
+}
+
+	.iconsContainer{
+		width:100%;
+		height:150px;
+		overflow: hidden;
+		position: relative;
+		display:flex;
+		gap:10px;
+		margin-bottom:5pc;
+
+		.para{
+			background-color:rgba(20,20,20,0.7) ;
+			padding: 30px 5px 10px 5px ;
+			width:200px;
+			position:relative;
+			
+			animation:scroll 15s linear infinite;
+
+			&_span{
+				display: block;
+				background-color: orange;
+				height:10px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+
+			&_right{
+				position:absolute;
+				right:5%;
+				bottom:15%;
+				background-color: orange;
+				display:block;
+				padding:5px;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+			&_icons{
+				font-size: 70px;
+			}
+		}
+		@keyframes scroll {
+			0%{
+				transform: translateX(100%);
+			}
+			100%{
+				transform: translateX(-100%);
+			}
+
+		}
+	}
+
+	.flexLove{
+	display: flex;
+    align-items: center;
+    width: 200px;
+    writing-mode: vertical-lr;
+	transform: scale(1,1);
+	height:150px;
+	position:absolute;
+	bottom:30%;
+	right:-15%;
+	z-index:3;
+   
+ 
+	&_span{
+		
+	
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+    height:100%;
+
+	}
+	&_para{
+		
+		background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height:450px;
+    font-weight: bold;
+	}
+}
+
+	.hobbyContainer{
+		display:grid;
+		grid-template-columns: auto auto;
+		gap:20px;
+		padding:0;
+		width:100%;
+		margin-bottom:12pc;
+		text-align: center;
+
+
+		p{
+
+			background-color:rgba(20,20,20) ;
+			font-size: 30px;
+			
+			padding:40px 20px;
+			border-radius: 10px;
+
+		}
+
+			&_icons{
+				color:orange;
+				font-size: 80px;
+						}
+	}
+
+@media screen and (max-width: 768px) {
+	.skillContainer{
+		padding:0px 30px;
+		
+		
+	}
+
+
+	.flexSkill{
+	display: grid;
+    grid-template-columns: auto auto auto;
+    writing-mode: horizontal-tb;
+	transform: scale(1,1);
+	height:0px;
+	position:absolute;
+	top:-10%;
+	left:25%;
+
+ 
+	&_span{
+		
+	
+    width:100px;
+    height:15px;
+
+	}
+	&_para{
+    padding: 5px 5px;
+    height:15px;
+    width:100px;
+
+
+
+	}
+
+}
+
+.iconsContainer{
+		display:grid;
+		grid-template-columns: repeat(6, auto);
+		gap:10px;
+		margin:10pc 0 0 ;
+		
+
+		.para{
+			&_right{
+				bottom:20%;
+			}
+		}
+		@keyframes scroll {
+			0%{
+				transform: translateX(90%);
+			}
+			100%{
+				transform: translateX(-400%);
+			}
+
+		}
+	}
+
+
+	.flexLove{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+    writing-mode: horizontal-tb;
+	transform: scale(1,1);
+	height:0px;
+	top:30%;
+	right:41%;
+   
+ 
+	&_span{
+    height:15px;
+    width:100px;
+
+	}
+	&_para{
+    height:15px;
+    width:100px;
+	}
+}
+
+	.hobbyContainer{
+		display:grid;
+		grid-template-columns: auto;
+		gap:20px;
+		padding:0;
+		width:100%;
+		margin:10pc 0 12pc;
+		
+
+
+		p{
+
+			background-color:rgba(20,20,20) ;
+			font-size: 30px;
+			
+			padding:40px 20px;
+			border-radius: 10px;
+
+		}
+
+			&_icons{
+				color:orange;
+				font-size: 80px;
+						}
+	}
+
+
+
+
+
+
+}

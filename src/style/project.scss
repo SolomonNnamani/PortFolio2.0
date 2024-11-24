@@ -1,0 +1,170 @@
+.projectContainer{
+	position:relative;
+		padding:0px 100px;
+		margin-bottom:10pc;
+		
+
+}
+.portfolioContainer{
+	display: flex;
+    align-items: center;
+    width: 200px;
+    writing-mode: vertical-rl;
+	transform: scale(-1,-1);
+	height:180px;
+	position:absolute;
+	top:-8%;
+	left:-15%;
+	z-index:2;
+   
+ 
+	&_span{
+		
+	
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+    height:200px;
+
+	}
+	&_para{
+		
+		background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height:200px;
+    font-weight: bold;
+
+
+
+	}
+
+}
+
+
+	.projectFolder{
+		display:grid;
+		grid-template-columns: auto;
+		width:100%;
+
+		&_design{
+			background-color: #333333;
+			border:2px solid white;
+			line-height: 2;
+			
+			border-radius: 10px;
+			overflow:hidden;
+		}
+		img{
+			width:100%;
+			object-fit: contain;
+		}
+		h2{
+			padding:0 10px;
+			margin:0;
+		}
+		p{
+			margin:0;
+			padding: 0 10px;
+		}
+	}
+
+	.text{
+		padding:0 10px;
+		
+		
+	}
+
+
+@media screen and (max-width: 768px) {
+
+.projectContainer{
+		padding:0px 30px;
+}
+	
+	.portfolioContainer{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    writing-mode: horizontal-tb;
+	transform: scale(1,1);
+	height:0px;
+	top:-30%;
+	left:25%;
+   
+ 
+	&_span{
+    height:15px;
+    width:100px
+
+	}
+	&_para{
+    height:15px;
+
+
+
+
+	}
+
+}
+
+.projectFolder{
+		display:grid;
+		grid-template-columns: auto;
+		width:100%;
+
+		&_design{
+			background-color: #333333;
+			border:2px solid white;
+			line-height: 2;
+			
+			border-radius: 10px;
+			overflow:hidden;
+		}
+		img{
+			width:100%;
+			object-fit: contain;
+		}
+		h2{
+			padding:0 10px;
+			margin:0;
+		}
+		
+	}
+
+	.text{
+		padding:0 10px;
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+.aboutContainer{
+	position:relative;
+	padding:0px 100px;
+	margin-bottom: 10pc;
+	
+
+}
+
+.aboutMeFlex{
+	display: flex;
+    align-items: center;
+    width: 200px;
+    writing-mode: vertical-lr;
+	transform: scale(1,1);
+	height:200px;
+	position:absolute;
+	top:-15%;
+	right:-15%;
+	z-index:3;
+   
+ 
+	&_span{
+		
+	
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+    height:300px;
+
+
+	}
+	&_para{
+		
+		background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+    height:300px;
+    font-weight: bold;
+	}
+}
+
+
+
+.contentText{
+
+	&_forImage{
+		border-radius:10px;
+		overflow: hidden;
+		border:1px solid transparent;
+		width:250px;
+		float:right;
+		height:350px;
+		margin:0;
+
+		img{
+		width:250px;
+
+		object-fit: contain;
+		filter:grayscale(100%);
+		transition: filter 0.5s;
+		
+	}
+	img:hover{
+			filter:grayscale(0%);
+		}
+
+
+	}
+	
+		&_text{
+			width:30pc;
+			line-height: 1.5;
+
+		}
+}
+
+	.buttonsContainer{
+
+		a, button{
+			background-color: orange;
+			border:1px solid orange;
+			padding:13px 15px;
+			margin-right: 5px;
+			width:140px;
+			border-radius: 5px;
+			font-size: 18px;
+			color:white;
+
+
+		}
+		a{
+			text-decoration: none;
+			
+			background-color: transparent;
+			
+			margin: 0;
+			
+		}
+	}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	.aboutContainer{
+	padding:0px 30px;
+	margin-top: 1pc;
+
+}
+
+
+
+		.aboutMeFlex{
+	display: grid;
+    grid-template-columns: auto auto auto;
+    writing-mode: horizontal-tb;
+	height:0px;
+	top:-15%;
+	right:41%;
+	width: 200px;
+   
+ 
+	&_span{
+    height:20px;
+    width: 100px;
+
+	}
+	&_para{
+    height:15px;
+    padding: 5px 0px;
+    width:100px;
+	}
+}
+
+	
+	.contentText{
+		text-align: center;
+	&_forImage{
+		float:none;
+		margin:0 auto;
+	}
+	
+		&_text{
+			width:100%;
+
+		}
+}
+
+.buttonsContainer{
+	text-align: center;
+		a, button{
+			background-color: orange;
+			border:1px solid orange;
+			padding:13px 15px;
+			margin-right: 5px;
+			width:140px;
+			border-radius: 5px;
+			font-size: 18px;
+			color:white;
+
+
+		}
+		a{
+			text-decoration: none;
+			
+			background-color: transparent;
+			
+			margin: 0;
+			
+		}
+	}
+
+
+	}

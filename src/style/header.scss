@@ -1,0 +1,213 @@
+
+.home{
+	padding:200px 100px;
+		height:52vh;
+		
+
+}
+
+.home_name{
+		position:relative;
+	padding: 0;
+		&_para{
+			color:orange;
+			padding:0;
+			margin: 0;
+			font-size: 20px;
+		}
+		h1{
+			font-size: 60px;
+			padding:0;
+			margin: 0;
+		}
+		h2{
+			color:orange;
+		}
+	}
+
+	.listContainer{
+		list-style:none;
+		padding:0;
+		margin-top:0;
+		li{
+			display: inline-block;
+			margin-right: 10px;
+			padding:0;
+		}
+	}
+
+	.periodIcons{
+		font-size:8px;
+		color:orange;
+	}
+
+	.buttonsContainer{
+
+		a, button{
+			background-color: orange;
+			border:1px solid orange;
+			padding:15px 15px;
+			margin-right: 5px;
+			width:140px;
+			border-radius: 5px;
+			font-size: 18px;
+			color:white;
+
+
+		}
+		a{
+			text-decoration: none;
+			
+			background-color: transparent;
+			
+			margin: 0;
+			
+		}
+	}
+
+	.gridFollow{
+	display: flex;
+    align-items: center;
+    width: 200px;
+    writing-mode: vertical-rl;
+	transform: scale(-1,-1);
+	height:150px;
+	position:absolute;
+	top:50%;
+	left:-28%;
+   
+ 
+	&_span{
+		
+	
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+    height:100%;
+
+	}
+	&_para{
+		
+		background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 7px;
+    height:430px;
+    font-weight: bold;
+
+
+
+	}
+
+}
+.none{
+	display:none;
+}
+.socials{
+	display:grid;
+	position: absolute;
+	top:-15%;
+	left:-17.2%;
+
+
+
+	a{
+		text-decoration: none;
+		color:white;
+		font-size: 18px;
+		margin-bottom: 17px;
+		color:white;
+
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+		.home{
+	padding:180px 50px;
+	height:56vh;
+		
+
+}
+
+		.home_name{
+		text-align: center;
+		h1{
+			font-size: 52px;
+		}
+
+		h2{
+			color:orange;
+			margin: 0;
+			margin-top: 1pc;
+		}
+	
+	}
+
+
+
+		.gridFollow{
+	display:grid;
+	grid-template-columns: auto auto auto;
+    writing-mode: horizontal-tb;
+	transform: scale(1,1);
+	top:90%;
+	left:18%;
+   
+ 
+	&_span{
+    height:20px;
+    width: 90px;
+
+	}
+	&_para{
+    padding: 5px 2px 5px;
+    height:15px;
+    width:110px;
+
+
+	}
+
+}
+.none{
+	display:block;
+}
+
+
+.socials{
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	position: absolute;
+	top:140%;
+	left:33%;
+
+
+
+	a{
+		font-size: 22px;
+		margin-right: 1.5pc;
+
+	}
+}
+
+.buttonsContainer{
+
+		a, button{
+			margin-top:1pc ;
+		}
+	}
+
+
+	}
+
+
+
+
+
+
+

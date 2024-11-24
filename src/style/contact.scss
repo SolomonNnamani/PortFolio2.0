@@ -1,0 +1,172 @@
+
+.contactContainer{
+	position:relative;
+		padding:0px 100px;
+		margin-bottom: 5pc;
+		
+}
+
+.flexContact{
+	display: flex;
+    align-items: center;
+    width: 200px;
+    writing-mode: vertical-lr;
+	transform: scale(1,1);
+	height:150px;
+	position:absolute;
+	bottom:30%;
+	right:-15%;
+	z-index:3;
+   
+ 
+	&_span{
+		
+	
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+    height:100%;
+
+	}
+	&_para{
+		
+		background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height:450px;
+    font-weight: bold;
+	}
+}
+
+
+
+	.inputContainer{
+		display:grid;
+		grid-template-columns: auto auto;
+		gap:10px;
+		width:100%;
+		
+		padding:0;
+		
+	}
+
+
+.inputText{
+	text-align: center;
+	width:20pc;
+	margin-right: 0;
+	line-height: 2;
+	
+
+}
+
+
+
+label{
+	display: block;
+	margin-top:5px;
+	color:grey;
+	font-size:12px;
+}
+
+input , textarea{
+	border-top:0;
+	border-right:0;
+	border-bottom:1px solid orange;
+	border-left:0;
+	background-color: transparent;
+	padding:15px 0;
+	resize:none;
+	outline:none;
+	color:white;
+	width:20pc
+
+}
+small{
+	color:red;
+}
+
+
+.button{
+	background-color: orange;
+	border:1px solid orange;
+	padding:5px 5px;
+	margin-top: 10px;
+	width:140px;
+	border-radius: 5px;
+	font-size: 1opx;
+	color:white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+		.contactContainer{
+		padding:0px 30px;
+		
+}
+	.flexContact{
+	display: flex;
+    align-items: center;
+    writing-mode: horizontal-tb;
+	transform: scale(1,1);
+	height:0px;
+	top:-10%;
+	right:35%;
+   
+	&_span{
+		
+    height:15px;
+    width:200px;
+
+	}
+	&_para{
+		
+    height:15px;
+ 
+	}
+}
+
+.inputContainer{
+		display:grid;
+		grid-template-columns: auto ;
+		width:100%;
+		
+	}
+	.inputText{
+	text-align: left;
+	width:100%;
+	line-height: 1.5;
+	
+
+}
+
+
+input , textarea{
+	width:100%;
+
+}
+small{
+	color:red;
+}
+
+
+.button{
+	padding:10px 5px;
+	width:100%;
+	
+}
+
+
+
+
+
+
+	}
+
+
+
