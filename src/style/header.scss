@@ -1,6 +1,6 @@
 
 .home{
-	padding:200px 100px;
+	padding:180px 8cm;
 		height:52vh;
 		
 
@@ -14,6 +14,7 @@
 			padding:0;
 			margin: 0;
 			font-size: 20px;
+			font-weight: bold;
 		}
 		h1{
 			font-size: 60px;
@@ -73,8 +74,8 @@
 	transform: scale(-1,-1);
 	height:150px;
 	position:absolute;
-	top:50%;
-	left:-28%;
+	top:5cm;
+	left:-8cm;
    
  
 	&_span{
@@ -106,8 +107,8 @@
 .socials{
 	display:grid;
 	position: absolute;
-	top:-15%;
-	left:-17.2%;
+	top:1cm;
+	left:-5.6cm;
 
 
 
@@ -129,8 +130,8 @@
 @media screen and (max-width: 768px) {
 
 		.home{
-	padding:180px 50px;
-	height:56vh;
+	padding:180px 30px;
+	height:50vh;
 		
 
 }
@@ -138,13 +139,12 @@
 		.home_name{
 		text-align: center;
 		h1{
-			font-size: 52px;
+			font-size: 38px;
 		}
 
 		h2{
 			color:orange;
-			margin: 0;
-			margin-top: 1pc;
+			margin: 1pc 0;
 		}
 	
 	}
@@ -156,13 +156,13 @@
 	grid-template-columns: auto auto auto;
     writing-mode: horizontal-tb;
 	transform: scale(1,1);
-	top:90%;
-	left:18%;
+	position:static;
+	margin: -2pc auto;
    
  
 	&_span{
     height:20px;
-    width: 90px;
+    width: 50px;
 
 	}
 	&_para{
@@ -182,15 +182,17 @@
 .socials{
 	display:grid;
 	grid-template-columns: auto auto auto auto;
-	position: absolute;
-	top:140%;
-	left:33%;
+	position: static;
+	width:150px;
+	margin:-3pc auto;
 
 
 
 	a{
 		font-size: 22px;
-		margin-right: 1.5pc;
+		margin-top: 0pc;
+
+
 
 	}
 }
@@ -199,6 +201,7 @@
 
 		a, button{
 			margin-top:1pc ;
+
 		}
 	}
 

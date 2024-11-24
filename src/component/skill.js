@@ -19,42 +19,42 @@ const {skill} = props
 			 <p className="para"> 
 			 <FaHtml5 className="para_icons" style={{color:"orangeRed"}} /> 
 			 <span className="para_right">85% </span> 
-			 <span className="para_span" style={{width:"185px"}} > </span> 
+			 <span className="para_span" style={{width:"85%"}} > </span> 
 			 
 			 </p>
 
 			 <p className="para"> 
 			 <FaSass className="para_icons" style={{color:"#CF649A"}}/>
 			 <span className="para_right"> 75% </span>
-			  <span className="para_span" style={{width:"175px"}} > </span> 
+			  <span className="para_span" style={{width:"75%"}} > </span> 
 			   
 			    </p>
 
 			 <p className="para"> 
 			 <IoLogoJavascript className="para_icons" style={{color:"yellow"}}/> 
 			 <span className="para_right"> 75% </span>
-			 <span className="para_span" style={{width:"175px"}} > </span> 
+			 <span className="para_span" style={{width:"75%"}} > </span> 
 			 
 			 </p>
 
 			 <p className="para"> 
 			 <FaReact className="para_icons" style={{color:"#61DAFB"}}/> 
 			 <span className="para_right"> 80%</span>
-			 <span className="para_span" style={{width:"180px"}} > </span>
+			 <span className="para_span" style={{width:"80%"}} > </span>
 			  
 			   </p>
 
 			 <p className="para"> 
 			 <FaNode className="para_icons" style={{color:"#339933"}} /> 
 			 <span className="para_right"> 70% </span>
-			 <span className="para_span" style={{width:"170px"}}  > </span>
+			 <span className="para_span" style={{width:"70%"}}  > </span>
 			  
 			   </p>
 
 			 <p className="para"> 
 			 <FaGithub  className="para_icons"/>
-			 <span className="para_right"> 80% </span>
-			  <span className="para_span" style={{width:"180px"}} > </span> 
+			 <span className="para_right"> 55% </span>
+			  <span className="para_span" style={{width:"55%"}} > </span> 
 			  
 			  </p>
 

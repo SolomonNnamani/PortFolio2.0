@@ -1,8 +1,7 @@
 .projectContainer{
 	position:relative;
-		padding:0px 100px;
-		margin-bottom:10pc;
-		
+		padding:0px 8cm;
+		margin-bottom:5pc;
 
 }
 .portfolioContainer{
@@ -14,7 +13,7 @@
 	height:180px;
 	position:absolute;
 	top:-8%;
-	left:-15%;
+	left:-0.5cm;
 	z-index:2;
    
  
@@ -47,12 +46,11 @@
 		display:grid;
 		grid-template-columns: auto;
 		width:100%;
-
+		margin-top: -3cm;
 		&_design{
 			background-color: #333333;
 			border:2px solid white;
-			line-height: 2;
-			
+			line-height: 1;
 			border-radius: 10px;
 			overflow:hidden;
 		}
@@ -88,22 +86,17 @@
 	grid-template-columns: repeat(3, 1fr);
     writing-mode: horizontal-tb;
 	transform: scale(1,1);
-	height:0px;
-	top:-30%;
-	left:25%;
-   
+	height:auto;
+	position: static;
+   margin:1pc auto;
  
 	&_span{
     height:15px;
-    width:100px
+    width:50px
 
 	}
 	&_para{
     height:15px;
-
-
-
-
 	}
 
 }
@@ -112,6 +105,7 @@
 		display:grid;
 		grid-template-columns: auto;
 		width:100%;
+		margin-top: 1cm;
 
 		&_design{
 			background-color: #333333;
@@ -120,10 +114,6 @@
 			
 			border-radius: 10px;
 			overflow:hidden;
-		}
-		img{
-			width:100%;
-			object-fit: contain;
 		}
 		h2{
 			padding:0 10px;

@@ -1,9 +1,9 @@
 
 .contactContainer{
 	position:relative;
-		padding:0px 100px;
+		padding:0px 8cm;
 		margin-bottom: 5pc;
-		
+				
 }
 
 .flexContact{
@@ -15,7 +15,7 @@
 	height:150px;
 	position:absolute;
 	bottom:30%;
-	right:-15%;
+	right:-0.5cm;
 	z-index:3;
    
  
@@ -110,18 +110,19 @@ small{
 		
 }
 	.flexContact{
-	display: flex;
-    align-items: center;
+	display: grid;
+    grid-template-columns: auto auto auto;
     writing-mode: horizontal-tb;
 	transform: scale(1,1);
-	height:0px;
-	top:-10%;
-	right:35%;
+	height:auto;
+	position: static;
+	margin:0 auto;
+	margin-top:-1cm;
    
 	&_span{
 		
     height:15px;
-    width:200px;
+    width:50px;
 
 	}
 	&_para{

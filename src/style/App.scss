@@ -1,23 +1,23 @@
 .App{
 	background-color: black;
 	color:white;
-	padding:30px 200px 50px;
-	margin-top:-5%;
-	margin-left: -5%;
-	position:relative;
+	padding:0;
 	font-family: "Roboto", sans-serif;
   	font-weight: 100;
   	font-style: normal;
-
+  	width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 	
 }
 .header{
 	position:fixed;
 		left:0;
 		top:0;
-	width:99.4%;
 	transition: background-color 0.3s ease;
 	z-index:1000;
+	width: 100%;
 
 	&.scrolled{
 		background-color: #333333;
@@ -74,12 +74,11 @@
 @media screen and (max-width: 768px) {
 		
 		.App{
-	padding:30px 0px 50px;
 	
 }
 
 	.header{
-	width:98.9%;
+	
 }
 
 	.headBlock{
@@ -139,7 +138,7 @@ transform: translateX(0px)
 	.isVisibleBtn{
 		display: block;
 		color:orange;
-		font-size:48px;
+		font-size:36px;
 		font-weight: bold;
 		border:none;
 		background-color: transparent;
