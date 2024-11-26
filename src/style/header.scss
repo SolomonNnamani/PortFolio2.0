@@ -1,217 +1,166 @@
-
-.home{
-	padding:180px 8cm;
-		height:52vh;
-		
-
+.home {
+  padding: 180px 8cm;
+  height: 52vh;
 }
 
-.home_name{
-		position:relative;
-	padding: 0;
-		&_para{
-			color:orange;
-			padding:0;
-			margin: 0;
-			font-size: 20px;
-			font-weight: bold;
-		}
-		h1{
-			font-size: 60px;
-			padding:0;
-			margin: 0;
-		}
-		h2{
-			color:orange;
-		}
-	}
+.home_name {
+  position: relative;
+  padding: 0;
+  &_para {
+    color: orange;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    color: orange;
+  }
+}
 
-	.listContainer{
-		list-style:none;
-		padding:0;
-		margin-top:0;
-		li{
-			display: inline-block;
-			margin-right: 10px;
-			padding:0;
-		}
-	}
+.listContainer {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0;
+  }
+}
 
-	.periodIcons{
-		font-size:8px;
-		color:orange;
-	}
+.periodIcons {
+  font-size: 8px;
+  color: orange;
+}
 
-	.buttonsContainer{
+.buttonsContainer {
+  a,
+  button {
+    background-color: orange;
+    border: 1px solid orange;
+    padding: 15px 15px;
+    margin-right: 5px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+  }
+  a {
+    text-decoration: none;
 
-		a, button{
-			background-color: orange;
-			border:1px solid orange;
-			padding:15px 15px;
-			margin-right: 5px;
-			width:140px;
-			border-radius: 5px;
-			font-size: 18px;
-			color:white;
+    background-color: transparent;
 
+    margin: 0;
+  }
+}
 
-		}
-		a{
-			text-decoration: none;
-			
-			background-color: transparent;
-			
-			margin: 0;
-			
-		}
-	}
+.gridFollow {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  writing-mode: vertical-rl;
+  transform: scale(-1, -1);
+  height: 150px;
+  position: absolute;
+  top: 5cm;
+  left: -8cm;
 
-	.gridFollow{
-	display: flex;
-    align-items: center;
-    width: 200px;
-    writing-mode: vertical-rl;
-	transform: scale(-1,-1);
-	height:150px;
-	position:absolute;
-	top:5cm;
-	left:-8cm;
-   
- 
-	&_span{
-		
-	
+  &_span {
     border: none;
     border-top: 1px solid #000;
     margin: 0;
-    height:100%;
-
-	}
-	&_para{
-		
-		background-color: #333333;
+    height: 100%;
+  }
+  &_para {
+    background-color: #333333;
     text-align: center;
     border-radius: 5px;
     padding: 0px 7px;
-    height:430px;
+    height: 430px;
     font-weight: bold;
-
-
-
-	}
-
+  }
 }
-.none{
-	display:none;
+.none {
+  display: none;
 }
-.socials{
-	display:grid;
-	position: absolute;
-	top:1cm;
-	left:-5.6cm;
+.socials {
+  display: grid;
+  position: absolute;
+  top: 1cm;
+  left: -5.6cm;
 
-
-
-	a{
-		text-decoration: none;
-		color:white;
-		font-size: 18px;
-		margin-bottom: 17px;
-		color:white;
-
-	}
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 17px;
+    color: white;
+  }
 }
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
+  .home {
+    padding: 180px 5px;
+    height: 50vh;
+  }
 
-		.home{
-	padding:180px 5px;
-	height:50vh;
-		
+  .home_name {
+    text-align: center;
+    h1 {
+      font-size: 32px;
+    }
 
-}
+    h2 {
+      color: orange;
+      margin: 1pc 0;
+    }
+  }
 
-		.home_name{
-		text-align: center;
-		h1{
-			font-size: 30px;
-			
-		}
-
-		h2{
-			color:orange;
-			margin: 1pc 0;
-		}
-	
-	}
-
-
-
-		.gridFollow{
-	display:grid;
-	grid-template-columns: auto auto auto;
+  .gridFollow {
+    display: grid;
+    grid-template-columns: auto auto auto;
     writing-mode: horizontal-tb;
-	transform: scale(1,1);
-	position:static;
-	margin: -2pc auto;
-   
- 
-	&_span{
-    height:20px;
-    width: 50px;
+    transform: scale(1, 1);
+    position: static;
+    margin: -2pc auto;
 
-	}
-	&_para{
-    padding: 5px 2px 5px;
-    height:15px;
-    width:110px;
+    &_span {
+      height: 20px;
+      width: 50px;
+    }
+    &_para {
+      padding: 5px 2px 5px;
+      height: 15px;
+      width: 110px;
+    }
+  }
+  .none {
+    display: block;
+  }
 
+  .socials {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: static;
+    width: 150px;
+    margin: -3pc auto;
 
-	}
+    a {
+      font-size: 22px;
+      margin-top: 0pc;
+    }
+  }
 
+  .buttonsContainer {
+    a,
+    button {
+      margin-top: 1pc;
+    }
+  }
 }
-.none{
-	display:block;
-}
-
-
-.socials{
-	display:grid;
-	grid-template-columns: auto auto auto auto;
-	position: static;
-	width:150px;
-	margin:-3pc auto;
-
-
-
-	a{
-		font-size: 22px;
-		margin-top: 0pc;
-
-
-
-	}
-}
-
-.buttonsContainer{
-
-		a, button{
-			margin-top:1pc ;
-
-		}
-	}
-
-
-	}
-
-
-
-
-
-
-
